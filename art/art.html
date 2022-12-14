@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Arts & Entertainment - Milan</title>
+        <link rel="stylesheet" href="../css/monuments_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="menu">
+                <link rel="stylesheet" href="/css/navbar_style.css">
+                <ul>
+                <li class="lg"><a href="../index.html">Milan</a></li>
+
+
+                    <li><a href="../history.html">HISTORY</a></li>
+
+                    <li><a href="#">PLACES</a>
+                        <ul>
+                            <li><a href="/places/monuments.html">Monuments</a></li>
+                            <li><a href="art.html">Arts & Entertainment</a></li>
+                            <li><a href="/nature_buildings/n&b.html">Nature & Buildings</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">EVENTS</a>
+                        <ul>
+                            <li><a href="/events/theatre_events.html">Theatre</a></li>
+                            <li><a href="/events/concerts.html">Concerts</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="/services/restaurants.html">Restaurants</a></li>
+                            <li><a href="/services/bar.html">Bar</a></li>
+                            <li><a href="/services/accomodation.html">Accomodation</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        
+        <!--IMAGE SLIDER START-->
+        <div class="slider-frame">
+            <div class="slide-images"> 
+                <!--radio buttons for manual sliding-->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+
+                <div class="img-container first">
+                    <img src="../img/scala_intern.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="../img/novecento.jpeg">
+                </div>
+                <div class="img-container">
+                    <img src="../img/museo civico.jpg">
+                </div>
+                <!--image slider end-->
+
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+
+        <!--IMAGE SLIDER END-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+
+        <div id="mainwrap">
+            <h3 id="monum">Art & Entertainment</h3>
+            <ul id="imgList">
+                <li class="imgcont"><a href="scala.html"><img src="../img/scala_theatre.jpg" width="183" height="86" alt="Example image"><br>
+                    Teatro alla Scala</a></li>
+                <li class="imgcont"><a href="novecento.html"><img src="../img/Arengario_da_Piazzetta_Reale.jpg" width="163" height="86" alt="Example image"><br>
+                    Museum of Novecento</a></li>
+                <li class="imgcont"><a href="brera.html"><img src="../img/Milano_brera_cortile.jpg" width="153" height="86" alt="Example image"><br>
+                    Pinacoteca di Brera</a></li>
+                <li class="imgcont"><a href="prada.html"><img src="../img/Fondazione_PRADA.jpg" width="193" height="86" alt="Example image"><br>
+                    Fondazione Prada</a></li>
+                <li class="imgcont"><a href="triennale.html"><img src="../img/Triennale_d.jpg" width="123" height="86" alt="Example image"><br>
+                    Triennale Museum</a></li>
+                <li class="imgcont"><a href="natural.html"><img src="../img/natural history.jpg" width="133" height="86" alt="Example image"><br>
+                    Natural History Museum</a></li>
+                <li class="imgcont"><a href="manzoni.html"><img src="../img/manzoni.jpg" width="143" height="86" alt="Example image"><br>
+                    Manzoni House</a></li>
+                <li class="imgcont"><a href="pinacoteca.html"><img src="../img/ambrosian.jpg" width="133" height="86" alt="Example image"><br>
+                    Pinacoteca Ambrosiana</a></li>
+            </ul>
+        </div>
+
+
+    </body>
+</html>

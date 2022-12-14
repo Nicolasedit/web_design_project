@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Restaurants - Milan</title>
+        <link rel="stylesheet" href="../css/monuments_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            
+            <nav class="menu">
+                <link rel="stylesheet" href="/css/navbar_style.css">
+                <ul>
+                <li class="lg"><a href="../index.html">Milan</a></li>
+
+                    <li><a href="../history.html">HISTORY</a></li>
+
+                    <li><a href="#">PLACES</a>
+                        <ul>
+                            <li><a href="/places/monuments.html">Monuments</a></li>
+                            <li><a href="/art/art.html">Arts & Entertainment</a></li>
+                            <li><a href="/nature_buildings/n&b.html">Nature & Buildings</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">EVENTS</a>
+                        <ul>
+                            <li><a href="/events/theatre_events.html">Theatre</a></li>
+                            <li><a href="/events/concerts.html">Concerts</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="bar.html">Bar</a></li>
+                            <li><a href="accomodation.html">Accomodation</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <!--IMAGE SLIDER START-->
+        <div class="slider-frame">
+            <div class="slide-images"> 
+                <!--radio buttons for manual sliding-->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+
+                <div class="img-container first">
+                    <img src="https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy-1140x694.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://img.grouponcdn.com/seocms/v4qXaTf2xAj6KwR3Zv2KPMMAsLW/brazillian-food_jpeg-1080x648">
+                </div>
+                <div class="img-container">
+                    <img src="https://images.everydayhealth.com/images/what-is-a-vegan-diet-benefits-food-list-beginners-guide-alt-1440x810.jpg?sfvrsn=1d260c85_1">
+                </div>
+                <!--image slider end-->
+
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+
+        <!--IMAGE SLIDER END-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+
+        <div id="mainwrap">
+            <h3 id="monum">Restaurants</h3>
+            <p>Top 10 rated by TripAdvisor</p>
+            <ul id="imgList">
+                <li class="imgcont"><a href="https://ristorantemabuhay.com/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/37/c1/f4/20191205-205649-largejpg.jpg" width="163" height="86" alt="Example image"><br>
+                <strong>Mabuhay Restaurant</strong><br>Filipino and Vegetarian Food<br>+39-02-3006-5018</a><br><button id="buy"><a href="https://ristorantemabuhay.com/">BOOK A TABLE</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.pareabistrot.com/english"><img src="https://media-cdn.tripadvisor.com/media/photo-s/24/8b/63/49/bar-station.jpg" width="153" height="86" alt="Example image"><br>
+                <strong>Parea Bistrot</strong><br>Italian Food<br>+39-02-4775-1500</a><br><button id="buy"><a href="https://www.pareabistrot.com/prenota-ora">BOOK A TABLE</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.facebook.com/ilpaninodellaghetto/"><img src="https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/292256666_472367584889941_305342665728764715_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Am8DIEcVt9UAX-EQ347&_nc_ht=scontent-prg1-1.xx&oh=00_AfCEqOC3wb8xVwetw-lxqmgLTQJ5TCDi5sel7n4SxGeXtQ&oe=639CBF48" width="193" height="86" alt="Example image"><br>
+                <strong>Il Panino del Laghetto</strong><br>Italian, Fast Food<br>+39-339-383-8785</a><br><button id="buy"><a href="https://www.facebook.com/ilpaninodellaghetto/">BOOK A TABLE</a></button></li>
+                    
+                <li class="imgcont"><a href="https://bluemmilano.com/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/22/43/87/c1/l-aperitivo-marcchigiano.jpg" width="123" height="86" alt="Example image"><br>
+                <strong>BLUE M Milano</strong><br>Italian, Healthy Food<br>+39-02-9738-6209</a><br><button id="buy"><a href="https://tinyurl.com/42zhk6bu">BOOK A TABLE</a></button></li>
+    
+                <li class="imgcont"><a href="https://www.incontro.restaurant/"><img src="https://www.incontro.restaurant/wp-content/uploads/2022/06/IMG_6113.jpg" width="183" height="86" alt="Example image"><br>
+                <strong>Incontro Restaurant&drink</strong><br>Seafood, Mediterranean<br>+39-392-785-1446</a><br><button id="buy"><a href="https://tinyurl.com/366ne9ap">BOOK A TABLE</a></button></li>
+                
+                <li class="imgcont"><a href="https://pitbeefmilano.com/"><img src="https://pitbeefmilano.com/wp-content/uploads/elementor/thumbs/Logo-web-oqiztkxpkonz44eldq22m8edtyrluah680qv1rkac6.png" width="133" height="86" alt="Example image"><br>
+                <strong>PitBeef Milano</strong><br>Steakhouse, Barbecue<br>+39-02-8706-3435</a><br><button id="buy"><a href="https://pitbeefmilano.com/">BOOK A TABLE</a></button></li>
+                    
+                <li class="imgcont"><a href="http://kebabbar.it/"><img src="https://kebabbar.it/wp-content/uploads/elementor/thumbs/kebabbar_starzagros_22_marzo-py26416pdgqpnp2m317obzjogxop88kswdcm9rdlpk.jpg" width="133" height="86" alt="Example image"><br>
+                <strong>Kebabbar Star Zagros</strong><br>Bar, International, Turkish<br>+39-02-4960-9930</a><br><button id="buy"><a href="https://kebabbarstarzagros.plateform.app/welcome">BOOK A TABLE</a></button></li>
+                       
+                <li class="imgcont"><a href="http://www.shabbygrill.it/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/ea/0c/1d/c.jpg" width="143" height="86" alt="Example image"><br>
+                <strong>Shabby Grill Restaurant</strong><br>Steakhouse, Barbecue<br>+39-02-2317-7599</a><br><button id="buy"><a href="https://www.shabbygrill.it/prenota-un-tavolo-da-shabby-grill/">BOOK A TABLE</a></button></li>
+    
+                <li class="imgcont"><a href="https://pizzium.com/eng/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/27/1d/6d/84/pizza-salsiccia-e-friarielli.jpg" width="143" height="86" alt="Example image"><br>
+                <strong>Pizzium</strong><br>Pizza, Neapolitan<br>+39-02-5405-0232</a><br><button id="buy"><a href="https://pizzium.com/eng/prenota/">BOOK A TABLE</a></button></li>
+
+                <li class="imgcont"><a href="http://www.sushiyokohama.it/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/18/90/d2/2a/sunset.jpg" width="143" height="86" alt="Example image"><br>
+                <strong>Yokohama Flavour Journey</strong><br>Japanese, Seafood, Sushi<br>+39-02-874291</a><br><button id="buy"><a href="http://www.sushiyokohama.it/">BOOK A TABLE</a></button></li>
+                            
+            </ul>
+        </div>
+
+
+    </body>
+</html>

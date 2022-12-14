@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Monuments - Milan</title>
+        <link rel="stylesheet" href="../css/monuments_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            
+            <nav class="menu">
+                <link rel="stylesheet" href="/css/navbar_style.css">
+                <ul>
+                <li class="lg"><a href="../index.html">Milan</a></li>
+                    <li><a href="../history.html">HISTORY</a></li>
+
+                    <li><a href="#">PLACES</a>
+                        <ul>
+                            <li><a href="monuments.html">Monuments</a></li>
+                            <li><a href="/art/art.html">Arts & Entertainment</a></li>
+                            <li><a href="/nature_buildings/n&b.html">Nature & Buildings</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">EVENTS</a>
+                        <ul>
+                            <li><a href="/events/theatre_events.html">Theatre</a></li>
+                            <li><a href="/events/concerts.html">Concerts</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="/services/restaurants.html">Restaurants</a></li>
+                            <li><a href="/services/bar.html">Bar</a></li>
+                            <li><a href="/services/accomodation.html">Accomodation</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        
+        <!--IMAGE SLIDER START-->
+        <div class="slider-frame">
+            <div class="slide-images"> 
+                <!--radio buttons for manual sliding-->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+
+                <div class="img-container first">
+                    <img src="../img/federico-di-dio-photography-YfcdRnkNgcU-unsplash.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1541514254856-8caa32916423?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                </div>
+                <div class="img-container">
+                    <img src="../img/maria-cappelli-XsXqM4HmYxc-unsplash.jpg">
+                </div>
+                <!--image slider end-->
+
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+
+        <!--IMAGE SLIDER END-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+
+        <div id="mainwrap">
+            <h3 id="monum">Monuments</h3>
+            <ul id="imgList">
+                <li class="imgcont"><a href="dome.html"><img src="../img/dome.jpg" width="183" height="86" alt="Example image"><br>
+                    Cathedral</a></li>
+                <li class="imgcont"><a href="royalpalace.html"><img src="../img/real_palace.jpg" width="163" height="86" alt="Example image"><br>
+                    Royal Palace</a></li>
+                <li class="imgcont"><a href="simplon_gate.html"><img src="../img/arch of peace.jpg" width="153" height="86" alt="Example image"><br>
+                    Simplon Gate</a></li>
+                <li class="imgcont"><a href="castle.html"><img src="../img/sforza.jpg" width="193" height="86" alt="Example image"><br>
+                    Castello Sforzesco</a></li>
+                <li class="imgcont"><a href="gallery.html"><img src="../img/galleria.jpg" width="123" height="86" alt="Example image"><br>
+                    Vittorio Emanuele II Gallery</a></li>
+                <li class="imgcont"><a href="santambr.html"><img src="../img/basilica.jpg" width="133" height="86" alt="Example image"><br>
+                    Basilica of St. Ambrouse</a></li>
+                <li class="imgcont"><a href="saintmary.html"><img src="../img/santa maria delle grazie.jpg" width="143" height="86" alt="Example image"><br>
+                    Church of St. Maria delle Grazie</a></li>
+                <li class="imgcont"><a href="saintlorenz.html"><img src="../img/san lorenzo.jpg" width="133" height="86" alt="Example image"><br>
+                    Basilica of St. Lorenzo</a></li>
+            </ul>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Nature & Buildings - Milan</title>
+        <link rel="stylesheet" href="../css/monuments_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="menu">
+                <link rel="stylesheet" href="/css/navbar_style.css">
+                <ul>
+                <li class="lg"><a href="../index.html">Milan</a></li>
+
+
+                    <li><a href="../history.html">HISTORY</a></li>
+
+                    <li><a href="#">PLACES</a>
+                        <ul>
+                            <li><a href="/places/monuments.html">Monuments</a></li>
+                            <li><a href="/art/art.html">Arts & Entertainment</a></li>
+                            <li><a href="n&b.html">Nature & Buildings</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">EVENTS</a>
+                        <ul>
+                            <li><a href="/events/theatre_events.html">Theatre</a></li>
+                            <li><a href="/events/concerts.html">Concerts</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="/services/restaurants.html">Restaurants</a></li>
+                            <li><a href="/services/bar.html">Bar</a></li>
+                            <li><a href="/services/accomodation.html">Accomodation</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <!--IMAGE SLIDER START-->
+        <div class="slider-frame">
+            <div class="slide-images"> 
+                <!--radio buttons for manual sliding-->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+
+                <div class="img-container first">
+                    <img src="../img/unicredit tower.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="../img/build.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="../img/navig_main.jpg">
+                </div>
+                <!--image slider end-->
+
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+
+        <!--IMAGE SLIDER END-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+
+        <div id="mainwrap">
+            <h3 id="monum">Nature & Buildings</h3>
+            <ul id="imgList">
+                <li class="imgcont"><a href="verticalfor.html"><img src="../img/Bosco_verticale_a_distanza.jpg" width="183" height="86" alt="Example image"><br>
+                    Vertical Forest</a></li>
+                <li class="imgcont"><a href="unicredit.html"><img src="../img/Torre_Unicredit.jpg" width="163" height="86" alt="Example image"><br>
+                    Unicredit Tower</a></li>
+                <li class="imgcont"><a href="sempione.html"><img src="../img/park.jpg" width="153" height="86" alt="Example image"><br>
+                    Simplon Park</a></li>
+                <li class="imgcont"><a href="navigli.html"><img src="../img/I-Navigli-di-Milano.jpg" width="193" height="86" alt="Example image"><br>
+                    Navigli</a></li>
+                <li class="imgcont"><a href="gae_aulenti.html"><img src="../img/gae_aule.jpg" width="123" height="86" alt="Example image"><br>
+                    Gae Aulenti Square</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Accomodation - Milan</title>
+        <link rel="stylesheet" href="../css/monuments_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            
+            <nav class="menu">
+                <link rel="stylesheet" href="/css/navbar_style.css">
+                <ul>
+                <li class="lg"><a href="../index.html">Milan</a></li>
+  
+                    <li><a href="../history.html">HISTORY</a></li>
+
+                    <li><a href="#">PLACES</a>
+                        <ul>
+                            <li><a href="/places/monuments.html">Monuments</a></li>
+                            <li><a href="/art/art.html">Arts & Entertainment</a></li>
+                            <li><a href="/nature_buildings/n&b.html">Nature & Buildings</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">EVENTS</a>
+                        <ul>
+                            <li><a href="/events/theatre_events.html">Theatre</a></li>
+                            <li><a href="/events/concerts.html">Concerts</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="bar.html">Bar</a></li>
+                            <li><a href="#">Accomodation</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <!--IMAGE SLIDER START-->
+        <div class="slider-frame">
+            <div class="slide-images"> 
+                <!--radio buttons for manual sliding-->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+
+                <div class="img-container first">
+                    <img src="https://pix10.agoda.net/hotelImages/1622784/-1/c2198f412ffd0d5ebba6759a5a58fb45.jpg?ca=9&ce=1&s=1024x768">
+                </div>
+                <div class="img-container">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/133219424.jpg?k=c1e0e199933692d89af807b3c51b24ffa52027b84134dcbcdbe50b04b02c60ba&o=&hp=1">
+                </div>
+                <div class="img-container">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/50594570.jpg?k=51ad249992381991760a77d7dd8a6042d99e93d6b36063ec3b57b968e5c138c3&o=&hp=1">
+                </div>
+                <!--image slider end-->
+
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+
+        <!--IMAGE SLIDER END-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+
+        <div id="mainwrap">
+            <h3 id="monum">Accomodations</h3>
+            <p>Top 10 rated by TripAdvisor</p>
+            <ul id="imgList">
+                <li class="imgcont"><a href="https://hotelberna.com/en/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/23/e3/f1/a7/exterior-view-main-building.jpg" width="163" height="86" alt="Example image"><br>
+                <strong>Hotel Berna</strong><br>Via Napo Torriani, 18</a><br><button id="buy"><a href="https://hotelberna.com/en">BOOK A ROOM</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.klimahotelmilano.com/it/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/26/a1/58/ea/814076-exterior.jpg" width="153" height="86" alt="Example image"><br>
+                <strong>Klima Hotel</strong><br>Via Privata Venezia Giulia, 8</a><br><button id="buy"><a href="https://www.ericsoft.biz/it/BookingEngine/Book?idh=18CD2221A413BCDF&lang=it&beta=true&arrival=2022-12-13&departure=2022-12-14&cur=EUR&guests=14911-3_14911-3">BOOK A ROOM</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.nh-collection.com/en/hotel/nh-collection-milano-president"><img src="https://media-cdn.tripadvisor.com/media/photo-s/17/d5/43/3a/lobby.jpg" width="193" height="86" alt="Example image"><br>
+                <strong>NH Collection Milano President</strong><br>Largo Augusto, 10</a><br><button id="buy"><a href="https://www.nh-collection.com/en/hotel/nh-collection-milano-president">BOOK A ROOM</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.hotel-bb.com/en/hotel/milano-city-center-duomo"><img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/f9/af/a9/b-b-hotel-milano-city.jpg" width="193" height="86" alt="Example image"><br>
+                <strong>B&B Hotel Milano City Center</strong><br>Via S. Tomaso, 4</a><br><button id="buy"><a href="https://www.hotel-bb.com/en/hotel/milano-city-center-duomo">BOOK A ROOM</a></button></li>
+                     
+                <li class="imgcont"><a href="https://www.marriott.com/en-us/hotels/milfp-four-points-milan-center/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"><img src="https://media-cdn.tripadvisor.com/media/photo-s/18/f8/69/29/lobby.jpg" width="193" height="86" alt="Example image"><br>
+                <strong>Four Points by Sheraton</strong><br>Via Gerolamo Cardano, 1</a><br><button id="buy"><a href="https://www.marriott.com/en-us/hotels/milfp-four-points-milan-center/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0">BOOK A ROOM</a></button></li>
+                    
+                <li class="imgcont"><a href="https://atlantichotel.it/en/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/24/ff/4a/52/exterior-view.jpg" width="193" height="86" alt="Example image"><br>
+                <strong>c-hotels Atlantic</strong><br>Via Napo Torriani, 24</a><br><button id="buy"><a href="https://atlantichotel.it/en/">BOOK A ROOM</a></button></li>
+                     
+                <li class="imgcont"><a href="https://www.duomo-apartments.com/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/22/f9/3e/c1/exterior-view.jpg" width="193" height="86" alt="Example image"><br>
+                <strong>Duomo Hotel & Apartments</strong><br>Via S. Paolo, 13</a><br><button id="buy"><a href="https://www.blastnessbooking.com/reservations/risultato.html?id_albergo=17509&dc=4791&id_stile=17859&lingua_int=eng&gg=13&mm=12&aa=2022&tot_bambini=0&tot_camere=1&notti_1=1&tot_adulti=2&_gfc_cli=16709582900981639&_gl=1*ay9jtl*_ga*MTIxMzgwMTk4Mi4xNjcwOTU4Mjky*_ga_W53BWMMCBX*MTY3MDk1ODI5Mi4xLjAuMTY3MDk1ODI5Mi4wLjAuMA..&_ga=2.3047344.1416282099.1670958292-1213801982.1670958292">BOOK A ROOM</a></button></li>
+                       
+                <li class="imgcont"><a href="https://www.iqhotelmilano.it/en/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/19/a3/e9/e1/triple-room.jpg" width="193" height="86" alt="Example image"><br>
+                <strong>iQ Hotel Milano</strong><br>Via Giovanni Battista Pirelli, 5</a><br><button id="buy"><a href="https://www.iqhotelmilano.it/en/">BOOK A ROOM</a></button></li>
+                
+                <li class="imgcont"><a href="https://www.leonardo-hotels.it/milan/nyx-hotel-milan?utm_source=gmb&utm_medium=link_site_gmb&utm_campaign=nyx-hotel-milan"><img src="https://media-cdn.tripadvisor.com/media/photo-s/24/0d/1b/ff/heaven-suite.jpg" width="193" height="86" alt="Example image"><br>
+                <strong>NYX Hotel Milan</strong><br>Piazza Quattro Novembre, 3</a><br><button id="buy"><a href="https://www.leonardo-hotels.it/milan/nyx-hotel-milan?utm_source=gmb&utm_medium=link_site_gmb&utm_campaign=nyx-hotel-milan">BOOK A ROOM</a></button></li>
+                        
+                <li class="imgcont"><a href="https://room-matehotels.com/en/giulia/"><img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/dc/b8/d8/room-mate-giulia.jpg" width="193" height="86" alt="Example image"><br>
+                <strong>Room Mate Giulia</strong><br>Via Silvio Pellico, 4</a><br><button id="buy"><a href="https://room-matehotels.com/en/giulia/">BOOK A ROOM</a></button></li>
+                            
+            </ul>
+
+        </div>
+
+
+    </body>
+</html>

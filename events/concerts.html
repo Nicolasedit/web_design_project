@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Concerts - Milan</title>
+        <link rel="stylesheet" href="../css/monuments_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="menu">
+                <link rel="stylesheet" href="/css/navbar_style.css">
+                <ul>
+                <li class="lg"><a href="../index.html">Milan</a></li>
+
+                    <li><a href="../history.html">HISTORY</a></li>
+
+                    <li><a href="#">PLACES</a>
+                        <ul>
+                            <li><a href="/places/monuments.html">Monuments</a></li>
+                            <li><a href="/art/art.html">Arts & Entertainment</a></li>
+                            <li><a href="/nature_buildings/n&b.html">Nature & Buildings</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">EVENTS</a>
+                        <ul>
+                            <li><a href="theatre_events.html">Theatre</a></li>
+                            <li><a href="#">Concerts</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="/services/restaurants.html">Restaurants</a></li>
+                            <li><a href="/services/bar.html">Bar</a></li>
+                            <li><a href="/services/accomodation.html">Accomodation</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <!--IMAGE SLIDER START-->
+        <div class="slider-frame">
+            <div class="slide-images"> 
+                <!--radio buttons for manual sliding-->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+
+                <div class="img-container first">
+                    <img src="https://www.hotelvisconteo.it/sites/default/files/concerti-milano.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://www.yesmilano.it/sites/default/files/styles/testata_full/public/event_top_event/copertina/6311/23708/Ippodromo_866x560.jpg?itok=NWdFcP3e">
+                </div>
+                <div class="img-container">
+                    <img src="https://images.agi.it/pictures/agi/agi/2022/05/22/063314633-4ea1ac0e-d1ec-4dea-b0f2-a2027d6641be.jpg">
+                </div>
+                <!--image slider end-->
+
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+
+        <!--IMAGE SLIDER END-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+
+        <div id="mainwrap">
+            <h3 id="monum">Concerts & Live</h3>
+            <ul id="imgList">
+                <li class="imgcont"><a href="https://www.ticketone.it/event/coez-tam-teatro-arcimboldi-milano-16034612/?affiliate=IGA"><img src="https://www.ticketone.it/obj/media/IT-eventim/teaser/222x222/2022/coez-biglietti-3.jpg" width="163" height="86" alt="Example image"><br>
+                "Coez"<br>16th December<br>Arcimboldi Theatre<br>9:00pm</a><br><button id="buy"><a href="">SOLD OUT</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.ticketone.it/event/alborosie-live-club-16078614/?affiliate=IGA"><img src="https://www.ticketone.it/obj/media/IT-eventim/teaser/222x222/2022/alborosie-biglietti-2.jpg" width="153" height="86" alt="Example image"><br>
+                "Alborosie and Shengen Clan"<br>16th December<br>Live Club<br>10:00pm</a><br><button id="buy"><a href="https://www.ticketone.it/event/alborosie-live-club-16078614/?affiliate=IGA">Tickets</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.ticketone.it/event/the-martinez-brothers-jaden-thompson-fabrique-16230287/?affiliate=IGA"><img src="https://dice-i-scdn-co.imgix.net/image/ab6761610000e5eb085c718c865b1bb7302ebc3b" width="193" height="86" alt="Example image"><br>
+                "The Martinez Brothers"<br>16th December<br>Fabrique Discoteque<br>11:30pm</a><br><button id="buy"><a href="https://www.ticketone.it/event/the-martinez-brothers-jaden-thompson-fabrique-16230287/?affiliate=IGA">Tickets</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.ticketone.it/event/il-volo-mediolanum-forum-12603614/?affiliate=IGA"><img src="https://www.ticketone.it/obj/media/IT-eventim/teaser/222x222/2022/il-volo-biglietti-2.jpg" width="123" height="86" alt="Example image"><br>
+                "Il Volo"<br>17th December<br>Mediolanum Forum<br>9:00pm</a><br><button id="buy"><a href="https://www.ticketone.it/event/il-volo-mediolanum-forum-12603614/?affiliate=IGA">Tickets</a></button></li>
+    
+                <li class="imgcont"><a href="https://www.milanotoday.it/eventi/concerto-einaudi-dal-verme-dicembre.html"><img src="https://www.ticketone.it/obj/media/IT-eventim/teaser/222x222/2022/einaudi-biglietti-2.jpg" width="183" height="86" alt="Example image"><br>
+                "Ludovico Einaudi"<br>18th December<br>Teatro dal Verme<br>8:00pm</a><br><button id="buy"><a href="">SOLD OUT</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.ticketone.it/event/fabrizio-moro-mediolanum-forum-15273843/?affiliate=IGA"><img src="https://www.ticketone.it/obj/media/IT-eventim/teaser/222x222/2022/fabrizio-moro-biglietti-2.jpg" width="133" height="86" alt="Example image"><br>
+                "Fabrizio Moro"<br>18th December<br>Mediolanum Forum<br>9:00pm</a><br><button id="buy"><a href="https://www.ticketone.it/event/fabrizio-moro-mediolanum-forum-15273843/?affiliate=IGA">Tickets</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.milanotoday.it/eventi/concerto-natale-2022-duomo.html"><img src="https://www.milanotoday.it/~media/horizontal-hi/25448109069570/concerto_natale_duomo.jpeg" width="133" height="86" alt="Example image"><br>
+                "Christmas Concert"<br>19th December<br>Cathedral<br>8:30pm</a><br><button id="buy"><a href="">FREE</a></button></li>
+                       
+                <li class="imgcont"><a href="https://www.ticketone.it/event/biagio-antonacci-palco-centrale-tour-mediolanum-forum-14466062/?affiliate=IGA"><img src="https://www.ticketone.it/obj/media/IT-eventim/teaser/222x222/2022/biagio-antonacci-biglietti.jpg" width="143" height="86" alt="Example image"><br>
+                "Biagio Antonacci"<br>19th December<br>Mediolanum Forum<br>9:00pm</a><br><button id="buy"><a href="https://www.ticketone.it/event/biagio-antonacci-palco-centrale-tour-mediolanum-forum-14466062/?affiliate=IGA">Tickets</a></button></li>
+    
+                <li class="imgcont"><a href="https://www.ticketone.it/event/macklemore-alcatraz-16129202/?affiliate=IGA"><img src="https://www.ticketone.it/obj/media/IT-eventim/teaser/222x222/2022/macklemore-biglietti.jpg" width="133" height="86" alt="Example image"><br>
+                "Macklemore"<br>3rd May<br>Alcatraz<br>9:00pm</a><br><button id="buy"><a href="https://www.ticketone.it/event/macklemore-alcatraz-16129202/?affiliate=IGA">Tickets</a></button></li>
+                
+                <li class="imgcont"><a href="https://www.ticketone.it/event/maneskin-stadi-2023-stadio-san-siro-16018669/?affiliate=IGA"><img src="https://www.ticketone.it/obj/media/IT-eventim/teaser/222x222/2022/maneskin-stadi-biglietti.jpg" width="133" height="86" alt="Example image"><br>
+                "Maneskin"<br>25th July<br>San Siro Stadium<br>9:00pm</a><br><button id="buy"><a href="https://www.ticketone.it/event/maneskin-stadi-2023-stadio-san-siro-16018669/?affiliate=IGA">Tickets</a></button></li>
+                    
+
+               
+               
+            </ul>
+        </div>
+
+    </body>
+</html>

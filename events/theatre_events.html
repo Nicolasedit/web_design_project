@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Theatre events - Milan</title>
+        <link rel="stylesheet" href="../css/monuments_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="menu">
+                <link rel="stylesheet" href="/css/navbar_style.css">
+                <ul>
+                <li class="lg"><a href="../index.html">Milan</a></li>
+
+                    <li><a href="../history.html">HISTORY</a></li>
+
+                    <li><a href="#">PLACES</a>
+                        <ul>
+                            <li><a href="/places/monuments.html">Monuments</a></li>
+                            <li><a href="/art/art.html">Arts & Entertainment</a></li>
+                            <li><a href="/nature_buildings/n&b.html">Nature & Buildings</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">EVENTS</a>
+                        <ul>
+                            <li><a href="theatre_events.html">Theatre</a></li>
+                            <li><a href="concerts.html">Concerts</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="/services/restaurants.html">Restaurants</a></li>
+                            <li><a href="/services/bar.html">Bar</a></li>
+                            <li><a href="/services/accomodation.html">Accomodation</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <!--IMAGE SLIDER START-->
+        <div class="slider-frame">
+            <div class="slide-images"> 
+                <!--radio buttons for manual sliding-->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+
+                <div class="img-container first">
+                    <img src="https://citynews-milanotoday.stgy.ovh/~media/horizontal-mid/1596061213781/sister-act-2.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://citynews-milanotoday.stgy.ovh/~media/horizontal-mid/50540044368117/andy-warhol-1.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://www.piccoloteatro.org/uploads/seasons/2022-2023/exhibitions/cenerentola/it_cenerentola-01_original.jpg?f9dec2d82971f79508d42f8b25296e97">
+                </div>
+                <!--image slider end-->
+
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+
+        <!--IMAGE SLIDER END-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+
+        <div id="mainwrap">
+            <h3 id="monum">Theatre Events</h3>
+            <ul id="imgList">
+
+                <li class="imgcont"><a href="https://www.piccoloteatro.org/en/2022-2023/cenerentola"><img src="https://www.piccoloteatro.org/uploads/seasons/2022-2023/exhibitions/cenerentola/it_cenerentola-4-3_original.jpg?dd6ac35a3de1fc3af260760da9c5e788" width="133" height="86" alt="Example image"><br>
+                "Cenerentola"<br>15th December<br>Piccolo Teatro Strehler<br>7:30pm</a><br><button id="buy"><a href="https://www.piccoloteatro.org/en/cart/purchase/2022-2023/cenerentola?hasLocale=1#/2022-12-15/19:30">Tickets</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.teatroallascala.org/en/season/2022-2023/ballet/the-nutcracker-under30-preview.html"><img src="https://static.teatroallascala.org/static/upload/sch/schiaccianoci-1-ph-andrea-tamoni---teatro-alla-scala1.png" width="183" height="86" alt="Example image"><br>
+                "The Nutcracker"<br>15th December<br>Scala Theatre<br>8:00pm</a><br><button id="buy"><a href="https://teatroallascala.vivaticket.it/it/production/balletto-lo-schiaccianoci-anteprima-giovani/3259">Tickets</a></button></li>
+                
+                <li class="imgcont"><a href="https://www.teatroallascala.org/en/season/2022-2023/opera/boris-godunov.html"><img src="https://static.teatroallascala.org/static/upload/sli/slider-evento-950x4901.jpg" width="163" height="86" alt="Example image"><br>
+                "Boris Godunov"<br>16th December<br>Scala Theatre<br>8:00pm</a><br><button id="buy"><a href="https://teatroallascala.vivaticket.it/it/production/opera-boris-godunov/3217">Tickets</a></button></li>
+                
+                <li class="imgcont"><a href="https://www.teatroallascala.org/en/season/2022-2023/concerts/recitals/michael-volle.html"><img src="https://static.teatroallascala.org/static/upload/mic/michael-volle-672305badg-ph-brescia-e-amisano---teatro-alla-scala1.png" width="153" height="86" alt="Example image"><br>
+                "Michael Volle"<br>18th December<br>Scala Theatre<br>8:00pm</a><br><button id="buy"><a href="https://teatroallascala.vivaticket.it/it/production/recital-di-canto-michael-volle/3250#">Tickets</a></button></li>
+                
+                <li class="imgcont"><a href="https://www.teatroallascala.org/en/season/2022-2023/great-operas-for-children/great-operas/il-piccolo-principe.html"><img src="https://static.teatroallascala.org/static/upload/pic/piccolo-principe-gallery1.jpg" width="193" height="86" alt="Example image"><br>
+                "The Little Prince"<br>18th December<br>Scala Theatre<br>2:30pm</a><br><button id="buy"><a href="https://teatroallascala.vivaticket.it/it/production/opera-per-bambini-il-piccolo-principe/3245#">Tickets</a></button></li>
+                
+                <li class="imgcont"><a href="https://teatronazionale.it/produzione/sister-act-il-musical/"><img src="https://www.teatro.it/images/spettacoli/39497/main-image/Teatro.it-sister-act-il-musical.jpg" width="123" height="86" alt="Example image"><br>
+                "Sister Act - The Musical"<br>18th December<br>National Theatre<br>3:30pm</a><br><button id="buy"><a href="https://teatronazionale.it/produzione/sister-act-il-musical/">Tickets</a></button></li>
+
+                <li class="imgcont"><a href="https://www.teatroallascala.org/en/season/2022-2023/concerts/exceptional-concerts/concerto-di-natale.html"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Pablo_Heras-Casado_at_Premios_Goya_2017_%28cropped%29.jpg" width="133" height="86" alt="Example image"><br>
+                "Christmas Concert"<br>22th December<br>Scala Theatre<br>8:00pm</a><br><button id="buy"><a href="https://teatroallascala.vivaticket.it/it/production/concerto-di-natale-m-mehta/3230?qubsq=495e9905-4000-4740-bd9a-954d707b094a&qubsp=58a9e879-9e9d-4e1e-890f-1191b198d687&qubsts=1670946219&qubsc=bestunion&qubse=teatroallascala&qubsrt=Safetynet&qubsh=84c0e9db256e6e6cb667a4e4b8b6abc1">Tickets</a></button></li>
+                
+                <li class="imgcont"><a href="https://www.fabbricadelvapore.org/-/andy-warhol-la-pubblicita-della-forma"><img src="https://igufinarranti.altervista.org/wp-content/uploads/2022/11/maxresdefault.jpg" width="143" height="86" alt="Example image"><br>
+                "Andy Warhol - Form Advertising"<br>26th December<br>Fabbrica del Vapore<br>12:00pm</a><br><button id="buy"><a href="https://www.ticketone.it/event/open-andy-warhol-la-pubblicita-della-forma-fabbrica-del-vapore-15701247/">Tickets</a></button></li>
+
+                <li class="imgcont"><a href="https://teatronazionale.it/produzione/cinderella-il-musical/"><img src="https://emxqx79c2q6.exactdn.com/wp-content/uploads/2022/09/CINDERELLA_250x300-2.jpg?strip=all&lossy=85&sharp=1&ssl=1" width="133" height="86" alt="Example image"><br>
+                "Cinderella - The Musical"<br>26th March<br>National Theatre<br>3:30pm</a><br><button id="buy"><a href="https://teatronazionale.it/produzione/cinderella-il-musical/">Tickets</a></button></li>
+                
+            </ul>
+        </div>        
+        
+    </body>
+
+    
+
+</html>

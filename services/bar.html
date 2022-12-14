@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bar & Clubs - Milan</title>
+        <link rel="stylesheet" href="../css/monuments_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            
+            <nav class="menu">
+                <link rel="stylesheet" href="/css/navbar_style.css">
+                <ul>
+                <li class="lg"><a href="../index.html">Milan</a></li>
+    
+                    <li><a href="../history.html">HISTORY</a></li>
+
+                    <li><a href="#">PLACES</a>
+                        <ul>
+                            <li><a href="/places/monuments.html">Monuments</a></li>
+                            <li><a href="/art/art.html">Arts & Entertainment</a></li>
+                            <li><a href="/nature_buildings/n&b.html">Nature & Buildings</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">EVENTS</a>
+                        <ul>
+                            <li><a href="/events/theatre_events.html">Theatre</a></li>
+                            <li><a href="/events/concerts.html">Concerts</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SERVICES</a>
+                        <ul>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="#">Bar</a></li>
+                            <li><a href="accomodation.html">Accomodation</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../contacts.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <!--IMAGE SLIDER START-->
+        <div class="slider-frame">
+            <div class="slide-images"> 
+                <!--radio buttons for manual sliding-->
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                
+
+                <div class="img-container first">
+                    <img src="https://media.istockphoto.com/photos/nightlife-at-the-naviglio-grande-in-milan-picture-id521995193">
+                </div>
+                <div class="img-container">
+                    <img src="https://milano.corriere.it/methode_image/2022/05/07/Milano/Foto%20Milano%20-%20Trattate/17290453-k8W-U3340133348640952D-656x492@Corriere-Web-Milano.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://www.milanotoday.it/~media/horizontal-hi/62136125013266/notte-rosa-viale-ceccarini-riccione-2-2.jpg">
+                </div>
+                <!--image slider end-->
+
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!--automatic navigation end-->
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+
+        <!--IMAGE SLIDER END-->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+
+        <div id="mainwrap">
+            <h3 id="monum">Bar & Clubs</h3>
+            <p>Top 10 rated by TripAdvisor</p>
+            <ul id="imgList">
+                <li class="imgcont"><a href="https://www.tripadvisor.it/Attraction_Review-g187849-d2221217-Reviews-Bobino_Milano-Milan_Lombardy.html"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/e9/ad/66/il-nostro-giovedi-sera.jpg?w=500&h=400&s=1" width="163" height="86" alt="Example image"><br>
+                <strong>Bobino Milan</strong><br>Piazzale Stazione Genova, 4</a><br><button id="buy"><a href="https://goo.gl/maps/3StXtn8en2nyGcmr9">VIEW ON MAPS</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.lachiesetta.it/"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/9f/20/43/la-chiesetta.jpg?w=500&h=400&s=1" width="153" height="86" alt="Example image"><br>
+                <strong>La Chiesetta</strong><br>Via Paolo Lomazzo, 12</a><br><button id="buy"><a href="https://goo.gl/maps/GfLfoogFM3TGnMzi8">VIEW ON MAPS</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.moscow-mule.it/"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/e1/e5/e2/moscow-mule-bar.jpg?w=500&h=400&s=1" width="193" height="86" alt="Example image"><br>
+                <strong>Moscow Mule Bar</strong><br>Via Teodosio, 60</a><br><button id="buy"><a href="https://goo.gl/maps/2YTW2YspJrfdVxDa9">VIEW ON MAPS</a></button></li>
+                    
+                <li class="imgcont"><a href="https://www.facebook.com/BackDoor43-357242831139149/timeline/"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e1/f2/f3/backdoor43.jpg?w=500&h=400&s=1" width="123" height="86" alt="Example image"><br>
+                <strong>BackDoor 43</strong><br>Ripa di Porta Ticinese, 43</a><br><button id="buy"><a href="https://goo.gl/maps/RwGEBtibpCpdXxmW6">VIEW ON MAPS</a></button></li>
+                
+                <li class="imgcont"><a href="https://www.tripadvisor.it/Attraction_Review-g187849-d8756032-Reviews-Lab_Milano_Cocktail_Bar-Milan_Lombardy.html"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/b1/23/e3/cocktail.jpg?w=500&h=400&s=1" width="183" height="86" alt="Example image"><br>
+                <strong>Lab Cocktail Bar</strong><br>Viale Premuda, 7</a><br><button id="buy"><a href="https://goo.gl/maps/e3CY5RbEb3WhhMJ97">VIEW ON MAPS</a></button></li>
+                
+                <li class="imgcont"><a href="https://www.facebook.com/profile.php?id=100063695973299"><img src="https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/302198006_493889392744256_5821239898084765686_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=3F30vqCXUrQAX_cYTyC&_nc_ht=scontent-prg1-1.xx&oh=00_AfAlKypYA4FaeVAhP4COHckcgt6f99jVdIZNKHvnxRrvNw&oe=639DFB8C" width="133" height="86" alt="Example image"><br>
+                <strong>Monkey Cocktail Bar</strong><br>Via Napo Torriani, 5</a><br><button id="buy"><a href="https://goo.gl/maps/n5Y1UNgFzgcsY3v1A">VIEW ON MAPS</a></button></li>
+                     
+                <li class="imgcont"><a href="https://www.tripadvisor.it/Attraction_Review-g187849-d4296770-Reviews-EGO_Cocktails_e_Distillati_di_Qualita-Milan_Lombardy.html"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/8e/c2/81/ego-cocktails-e-distillati.jpg?w=500&h=400&s=1" width="133" height="86" alt="Example image"><br>
+                <strong>EGO Cocktails</strong><br>Alzaia Naviglio Pavese, 2</a><br><button id="buy"><a href="https://goo.gl/maps/mCh2ptqpFpEscZpi9">VIEW ON MAPS</a></button></li>
+                       
+                <li class="imgcont"><a href="https://www.facebook.com/GingerCocktailLabNavigli"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/5c/d1/cd/il-ginger-cocktail-lab.jpg?w=500&h=400&s=1" width="143" height="86" alt="Example image"><br>
+                <strong>Ginger Cocktail Lab</strong><br>Via Ascanio Sforza, 21</a><br><button id="buy"><a href="https://goo.gl/maps/kn6pSuHS65dYtvgs7">VIEW ON MAPS</a></button></li>
+
+                <li class="imgcont"><a href="https://www.tripadvisor.it/Attraction_Review-g187849-d5927206-Reviews-Mag_Cafe-Milan_Lombardy.html"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/35/f0/0b/l-albero-di-natale-come.jpg?w=500&h=-1&s=1" width="143" height="86" alt="Example image"><br>
+                <strong>Mag cafè</strong><br>Ripa di Porta Ticinese, 43</a><br><button id="buy"><a href="https://goo.gl/maps/sEgVT2nziXKQ8T4R8">VIEW ON MAPS</a></button></li>
+                
+                <li class="imgcont"><a href="https://www.aethoshotels.com/milan/the-doping-bar/"><img src="https://lh5.googleusercontent.com/p/AF1QipN2lm3Kbac96LYe2o5aRoXS3vH2QJ_ttTZ-MnSI=w408-h306-k-no" width="143" height="86" alt="Example image"><br>
+                <strong>The Doping Bar</strong><br>Piazza Ventiquattro Maggio, 8</a><br><button id="buy"><a href="https://goo.gl/maps/BxZP9yCHxXWZiAbZ6">VIEW ON MAPS</a></button></li>
+                             
+            </ul>
+
+        </div>
+
+
+    </body>
+</html>
